@@ -10,6 +10,11 @@ The dashboard helps stakeholders make data-driven decisions by identifying top-p
 
 ---
 
+## Live Demo
+
+[Open Dashboard](https://afficionado-coffee-revenue-analysis.streamlit.app/)
+
+
 ## 🎯 Objectives
 
 * Analyze overall revenue performance
