@@ -491,6 +491,115 @@ border-left:8px solid #6D4C41;
 </div>
 """, unsafe_allow_html=True)
 
+# ----------------------------------
+# COFFEE BUSINESS ASSISTANT
+# ----------------------------------
+
+st.markdown("""
+<h2 style="
+color:#4E342E;
+font-weight:bold;
+">
+🤖 Coffee Business Assistant
+</h2>
+""", unsafe_allow_html=True)
+
+query = st.selectbox(
+    "Ask a business question",
+    [
+        "Select a question",
+        "What is the top selling product?",
+        "Which product generates the highest revenue?",
+        "Which store generates the highest revenue?",
+        "Which category contributes the most revenue?",
+        "How many unique products are sold?",
+        "What is the total revenue?"
+    ]
+)
+
+answer = ""
+
+if query == "What is the top selling product?":
+
+    top_product = (
+        filtered_df.groupby("product_detail")["transaction_qty"]
+        .sum()
+        .idxmax()
+    )
+
+    answer = f"🏆 Top Selling Product: {top_product}"
+
+elif query == "Which product generates the highest revenue?":
+
+    top_revenue_product = (
+        filtered_df.groupby("product_detail")["Revenue"]
+        .sum()
+        .idxmax()
+    )
+
+    answer = f"💰 Highest Revenue Product: {top_revenue_product}"
+
+elif query == "Which store generates the highest revenue?":
+
+    top_store = (
+        filtered_df.groupby("store_location")["Revenue"]
+        .sum()
+        .idxmax()
+    )
+
+    answer = f"🏪 Top Revenue Store: {top_store}"
+
+elif query == "Which category contributes the most revenue?":
+
+    top_category = (
+        filtered_df.groupby("product_category")["Revenue"]
+        .sum()
+        .idxmax()
+    )
+
+    answer = f"☕ Highest Revenue Category: {top_category}"
+
+elif query == "How many unique products are sold?":
+
+    unique_products = (
+        filtered_df["product_detail"]
+        .nunique()
+    )
+
+    answer = f"📦 Unique Products Sold: {unique_products}"
+
+elif query == "What is the total revenue?":
+
+    total_revenue = (
+        filtered_df["Revenue"]
+        .sum()
+    )
+
+    answer = f"💰 Total Revenue: ${total_revenue:,.2f}"
+
+# Coffee themed answer card
+if answer:
+
+    st.markdown(f"""
+    <div style="
+    background-color:#EFEBE9;
+    padding:20px;
+    border-radius:12px;
+    border-left:8px solid #6D4C41;
+    margin-top:10px;
+    box-shadow:2px 2px 8px rgba(0,0,0,0.1);
+    ">
+
+    <h3 style="
+    color:#4E342E;
+    margin:0;
+    ">
+    {answer}
+    </h3>
+
+    </div>
+    """, unsafe_allow_html=True)
+
 st.markdown("""
 <div style="
 background:linear-gradient(90deg,#3E2723,#6D4C41);
