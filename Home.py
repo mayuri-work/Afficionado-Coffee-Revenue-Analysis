@@ -614,7 +614,7 @@ color:white;
 font-size:16px;
 font-weight:bold;
 ">
-☕ Built with Streamlit | Data Analytics Project | 2026
+☕ Built with Streamlit | Data Analytics Project | 2026 | Developed by Mayuri Gupta
 </span>
 
 </div>
