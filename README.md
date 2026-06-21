@@ -1,28 +1,20 @@
-# ☕ Afficionado Coffee Revenue Analysis Dashboard
+# ☕ Afficionado Coffee Roasters: Product Optimization, Revenue Analysis & ML Prediction Dashboard
 
 ## 📌 Project Overview
 
-The **Afficionado Coffee Revenue Analysis Dashboard** is an interactive business intelligence dashboard built using **Python, Pandas, Plotly, and Streamlit**.
+This project is an interactive Business Intelligence and Machine Learning Dashboard developed using Streamlit, Pandas, Plotly, and Scikit-Learn.
 
-This project analyzes coffee shop transaction data to uncover revenue trends, product performance, store-level insights, and business optimization opportunities.
-
-The dashboard helps stakeholders make data-driven decisions by identifying top-performing products, revenue drivers, and customer purchasing patterns.
+The dashboard helps analyze coffee sales performance, identify revenue-driving products, optimize business decisions, and predict product success using a Machine Learning model.
 
 ---
 
-## Live Demo
-
-[Open Dashboard](https://afficionado-coffee-revenue-analysis.streamlit.app/)
-
-
 ## 🎯 Objectives
 
-* Analyze overall revenue performance
-* Identify top-selling and top-revenue products
-* Evaluate store-wise performance
-* Understand category-wise revenue contribution
-* Discover high-impact products using Pareto Analysis
-* Generate actionable business recommendations
+* Analyze sales and revenue trends.
+* Identify top-performing products.
+* Optimize revenue contribution across categories and stores.
+* Apply Machine Learning to predict product performance.
+* Generate actionable business insights through interactive visualizations.
 
 ---
 
@@ -30,52 +22,133 @@ The dashboard helps stakeholders make data-driven decisions by identifying top-p
 
 ### 🏠 Home Dashboard
 
-* Interactive filters
-* Revenue KPI cards
-* Quantity sold analysis
-* Transaction analysis
-* Product analysis
-* Top Revenue Products
-* Top Selling Products
-* Category Revenue Share
-* Revenue by Store
+* Interactive Filters
+* KPI Cards
+* Revenue Analysis
+* Product Analysis
+* Category Revenue Distribution
+* Store-wise Revenue Analysis
 * Popularity vs Revenue Analysis
 * Business Recommendations
 
+---
+
 ### 📦 Product Intelligence
 
-* Product performance insights
-* Product popularity analysis
-* Revenue contribution analysis
-* Best-performing product identification
-* Product efficiency tracking
+* Product Performance Analysis
+* Top Products Identification
+* Revenue vs Popularity Analysis
+* Product Performance Table
+* Product Insights
+
+---
 
 ### 📈 Revenue Optimization
 
-* Revenue concentration analysis
+* Revenue Contribution Analysis
+* Revenue by Category
+* Revenue by Store
 * Pareto (80/20) Analysis
-* Revenue contribution by category
-* Revenue contribution by store
-* Revenue optimization KPIs
-* Strategic business insights
+* Revenue Optimization Insights
+* Strategic Recommendations
+
+---
+
+### 🤖 ML Product Success Predictor
+
+* Random Forest Classification Model
+* Product Success Prediction
+* High / Medium / Low Performer Classification
+* Prediction Confidence Score
+* Feature Importance Analysis
+* Machine Learning Insights
+
+---
+
+## 🧠 Machine Learning Component
+
+### Model Used
+
+* Random Forest Classifier
+
+### Features
+
+* Transaction Quantity
+* Unit Price
+* Product Category
+* Store Location
+
+### Target Variable
+
+* Product Performance Category
+
+  * High Performer
+  * Medium Performer
+  * Low Performer
+
+### Outputs
+
+* Product Success Prediction
+* Confidence Score
+* Feature Importance Visualization
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose                    |
-| ---------- | -------------------------- |
-| Python     | Data Processing            |
-| Pandas     | Data Analysis              |
-| Plotly     | Interactive Visualizations |
-| Streamlit  | Dashboard Development      |
-| NumPy      | Numerical Operations       |
+| Technology               | Purpose                            |
+| ------------------------ | ---------------------------------- |
+| Python                   | Data Processing & Backend Logic    |
+| Pandas                   | Data Analysis & Manipulation       |
+| NumPy                    | Numerical Operations               |
+| Plotly                   | Interactive Data Visualizations    |
+| Streamlit                | Dashboard Development              |
+| Scikit-Learn             | Machine Learning Model Development |
+| Random Forest Classifier | Product Success Prediction         |
+| GitHub                   | Version Control & Project Hosting  |
+| Streamlit Cloud          | Application Deployment             |
+
 
 ---
 
-## 📊 Dashboard Screenshots
+## 📂 Project Structure
+
+## 📂 Project Structure
+
+```text
+Afficionado-Coffee-Revenue-Analysis/
+│
+├── pages/
+│   ├── Product_Intelligence.py
+│   ├── Revenue_Optimization.py
+│   └── ML_Product_Success_Predictor.py
+│
+├── Afficionado Coffee Roasters.xlsx - Transactions.csv
+├── Home.py
+├── Product_Optimization_and_Revenue_Contribution_Analysis.ipynb
+├── README.md
+├── requirements.txt
+│
+├── home_dashboard.png
+├── home_analytics.png
+├── product_intelligence.png
+├── revenue_optimization.png
+└── pareto_analysis.png
+```
+
+
+
+---
+
+## 📸 Dashboard Screenshots
+
+## 📸 Dashboard Screenshots
 
 ### 🏠 Home Dashboard
+
+```markdown
+![Home Dashboard](home_dashboard.png)
+```
 
 ![Home Dashboard](home_dashboard.png)
 
@@ -83,11 +156,19 @@ The dashboard helps stakeholders make data-driven decisions by identifying top-p
 
 ### 📊 Home Analytics
 
+```markdown
+![Home Analytics](home_analytics.png)
+```
+
 ![Home Analytics](home_analytics.png)
 
 ---
 
 ### 📦 Product Intelligence
+
+```markdown
+![Product Intelligence](product_intelligence.png)
+```
 
 ![Product Intelligence](product_intelligence.png)
 
@@ -95,38 +176,55 @@ The dashboard helps stakeholders make data-driven decisions by identifying top-p
 
 ### 📈 Revenue Optimization
 
+```markdown
+![Revenue Optimization](revenue_optimization.png)
+```
+
 ![Revenue Optimization](revenue_optimization.png)
 
 ---
 
-### 🎯 Pareto Analysis
+### 🎯 Pareto Analysis (80/20 Rule)
+
+```markdown
+![Pareto Analysis](pareto_analysis.png)
+```
 
 ![Pareto Analysis](pareto_analysis.png)
 
 ---
 
-## 📂 Project Structure
+### 🤖 ML Product Success Predictor
 
-```text
-Afficionado-Coffee-Revenue-Analysis/
-
-├── Home.py
-├── requirements.txt
-├── README.md
-├── data/
-│   └── Afficionado Coffee Roasters.xlsx - Transactions.csv
-│
-├── pages/
-│   ├── Product_Intelligence.py
-│   └── Revenue_Optimization.py
-│
-└── screenshots/
-    ├── home_dashboard.png
-    ├── home_analytics.png
-    ├── product_intelligence.png
-    ├── revenue_optimization.png
-    └── pareto_analysis.png
+```markdown
+![ML Product Success Predictor](ml_product_success_predictor.png)
 ```
+
+![ML Product Success Predictor](ml_product_success_predictor.png)
+
+```
+```
+
+
+---
+
+## 💡 Key Business Insights
+
+* Coffee and Tea categories contribute the highest revenue.
+* A small number of products generate the majority of total revenue.
+* Product popularity strongly influences business performance.
+* Unit Price and Transaction Quantity are the most important predictors of product success.
+* Revenue optimization opportunities exist across product categories and store locations.
+
+---
+
+## 🌐 Live Demo
+
+Streamlit Application:
+
+https://afficionado-coffee-revenue-analysis.streamlit.app/
+
+---
 
 ## ⚙️ Installation
 
@@ -136,7 +234,7 @@ Clone the repository:
 git clone https://github.com/mayuri-work/Afficionado-Coffee-Revenue-Analysis.git
 ```
 
-Navigate to the project folder:
+Navigate to the project directory:
 
 ```bash
 cd Afficionado-Coffee-Revenue-Analysis
@@ -148,7 +246,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Run the Streamlit application:
+Run the application:
 
 ```bash
 streamlit run Home.py
@@ -156,33 +254,33 @@ streamlit run Home.py
 
 ---
 
-## 💡 Key Insights
-
-* Coffee and Tea categories contribute the highest revenue.
-* A small set of products drives a significant share of total revenue.
-* Store performance remains relatively balanced across locations.
-* Product-level analysis helps identify high-value offerings.
-* Pareto Analysis highlights products responsible for the majority of revenue generation.
-
----
-
-## 🔮 Future Improvements
-
-* Time-series sales forecasting
-* Customer segmentation analysis
-* Advanced recommendation engine
-* Real-time dashboard updates
-* Automated reporting system
-
----
-
 ## 👩‍💻 Author
 
 **Mayuri Gupta**
 
-B.Tech Computer Science Engineering Student
+B.Tech CSE (AI & ML)
+IILM University, Greater Noida
 
-Passionate about Data Analytics, Machine Learning, and Business Intelligence.
+LinkedIn:
+https://www.linkedin.com/in/mayurigupta4/
+
+GitHub:
+https://github.com/mayuri-work
+
+---
+
+## ⭐ Future Enhancements
+
+* Advanced Machine Learning Models
+* Sales Forecasting
+* Customer Segmentation
+* Demand Prediction
+* Real-time Data Integration
+* AI-powered Business Assistant
+
+---
+
+**Built with ❤️ using Streamlit, Plotly, and Machine Learning**
 
 ---
 
